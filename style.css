@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-image: url('paper_new.jpg');
+}
+
+.top {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container{
+    margin: 50px;
+    background-color: white;
+    width: 75%;
+    padding: 40px;
+    border-radius: 25px;
+    /* height: 75%; */
+    /* background-image: url('Texturelabs_Grunge_311L.jpg'); */
+    opacity: 1;
+    /* background-size:70%; */
+    box-shadow: 5px 5px 50px black;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    gap: 30px;
+   
+}
+
+.secondContainer{
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 0 2rem 0 2rem;
+  align-items: center;
+}
+
+p{
+  margin: 15px 0 15px 0;
+  font-family: montserrat;
+  line-height: 1.5;
+}
+
+
+h1{
+    margin-bottom: 15px;
+    font-size: 80px;
+    color: rgb(247, 210, 26);
+    text-decoration: underline  rgb(74, 73, 73,.3);
+    stroke: 2px solid #000000;
+    font-family: rowdies, Helvetica, sans-serif;
+    
+}
+h3{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family:  Poppins,Helvetica,Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    border: 2px dashed black;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: black;
+    border: 2px dashed black;
+    text-decoration: none;
+    /* font-family: poppins; */
+  }
+  
+
+  a{
+    text-decoration: none;
+    color: rgb(34, 32, 32);
+    font-size: 20px;
+
+  }
+
+  a:hover{
+    color: orange;
+  }
+hr{
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 20px 0 20px;
+}
+  .footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 50px;
+    font-size: 20px;
+    /* background-image: url('Texturelabs_Paper_316M.jpg'); */
+    font-family: sans-serif, Helvetica, sans-serif;
+  }
+.foot{
+  color: white;
+}
+.instaicon{
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+  @media (max-width:998px) {
+    .top{
+      height: 100%;
+    }
+    .secondContainer{
+      flex-direction: column;
+      justify-content: left;
+    }
+    .dish{
+      height: 80%;
+    }
+  }
+  @media (max-width:630px){
+    .dish{
+      margin-top: 20px;
+      height: 300px;
+    }
+
+    .footer{
+      flex-direction: column;
+    }
+  }
